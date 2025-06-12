@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="Site/Style/styles.css" />
+  <link rel="stylesheet" href="Site/Style/header.css" />
+  <link rel="stylesheet" href="Site/Style/Home.css" />
+  <link rel="stylesheet" href="Site/Style/menu.css" />
+  <link rel="stylesheet" href="Site/Style/AddReceitas.css" />
+  <link rel="stylesheet" href="Site/Style/footer.css" />
+
+
+  <title>Site Receitas</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <i class="fa-solid fa-utensils" id="nav_logo"> Receitas</i>
+
+      <ul id="nav_list">
+        <li class="nav_item active"><a href="#Menu">Ver Receitas</a></li>
+        <li class="nav_item"><a href="sobrenos.html">Sobre Nós</a>
+        </li>
+      </ul>
+
+      <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-controls="mobile_menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="overlay"></div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav_item"><a href="#Menu">Ver Receitas</a></li>
+        <li class="nav_item"><a href="sobrenos.html">Sobre Nós</a>
+        </li>
+
+      </ul>
+      
+      <a href="cadastro.html" class="btn-default"> + Adicionar</a>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="Home">
+      <div class="shape"></div>
+      <div id="cta">
+        <h1 class="title">Diário de <span>Receitas</span><br /></h1>
+        <p class="description">
+          Seja bem-vindo ao delicioso mundo das receitas - onde cada prato conta uma história!<br /><br />
+        </p>
+        <div id="cta_buttons">
+          <a href="#Menu" class="btn-default">Ver Receitas</a>
+        </div>
+      </div>
+
+      <div id="banner">
+        <img src="Site/images/1png.png" alt="Imagem de Destaque" />
+      </div>
+    </section>
+
+    <section id="Menu">
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Receitas Perfeitas para todos os Sabores, Estilos e Ocasiões</h3>
+      
+        <div id="dishes">
+          <!-- PRATO 1 - Strogonoff de Frango -->
+          <div class="dish-container">
+            <div class="dish-card">
+              <div class="card-front">
+                <!-- conteúdo da frente do card -->
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="Site/images/OP1.webp" class="dish-image" alt="Strogonoff de Frango">
+                <h3 class="dish-title">Strogonoff de Frango</h3>
+                <span class="dish-description">Frango com molho cremoso de champignon.</span>
+                <div class="dish-rate">
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(500+)</span>
+                  </div>
+                  <button class="btn-default btn-ver-receita"><i class="fa-solid fa-book"></i></button>
+                </div>
+              </div>
+          
+              <div class="card-back">
+                <h3>Strogonoff de Frango</h3>
+                <h4>Ingredientes:</h4>
+                <p> <li>500g de peito de frango cortado em cubos</li>
+                <li>                 cebola picada</li>
+                <li>                  2 dentes de alho picados
+                </li>
+                <li>                  1 colher de sopa de azeite
+                </li>
+                <li>                  1 lata de creme de leite
+                </li>
+                <li>                  2 colheres de sopa de ketchup
+                </li>
+                <li>                  1 colher de sopa de mostarda
+                </li>
+                <li>                  1/2 xícara de molho de tomate
+                </li>
+                <li>                  Sal e pimenta a gosto
+                </li>
+                <li>Salsinha a gosto</li>       
+                </p>
+                <h4>Modo de Preparo:</h4>
+                <p>Refogue a cebola e o alho no azeite, adicione o frango e doure. Coloque o ketchup, a mostarda, o molho de tomate, sal e pimenta. Acrescente o creme de leite, misture e deixe cozinhar por 5 minutos. Sirva com arroz e batata palha.
+              </p>
+              </div>
+            </div>
+          </div>
+
+      <!-- PRATO 2 - Lasanha -->
+<div class="dish-container">
+    <div class="dish-card">
+      <div class="card-front">
+        <!-- conteúdo da frente do card -->
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="Site/images/OP2.jpg" class="dish-image" alt="Lasanha">
+        <h3 class="dish-title">Lasanha</h3>
+        <span class="dish-description">Molho cremoso e camadas de sabor.</span>
+        <div class="dish-rate">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <button class="btn-default btn-ver-receita"><i class="fa-solid fa-book"></i></button>
+        </div>
+      </div>
+      
+      <div class="card-back">
+        <h3>Lasanha</h3>
+        <h4>Ingredientes:</h4>
+        <p><li>500g de carne moída
+        </li>
+        <li>1 cebola picada</li>
+        <li>1 lata de molho de tomate</li>
+        <li>1 pacote de massa de lasanha pré-cozida</li>
+        <li>300g de queijo muçarela fatiado</li>
+        <li>150g de queijo parmesão ralado</li>
+        <li>Sal e pimenta a gosto</li>
+        <li>1 colher de sopa de azeite</li></p>
+        <h4>Modo de Preparo:</h4>
+        <p>Refogue a cebola, o alho e a carne moída. Adicione o molho de tomate, sal, pimenta e deixe cozinhar. Em um refratário, monte a lasanha alternando camadas de molho, massa e queijo. Finalize com molho e queijo por cima. Leve ao forno por 30 minutos a 180°C e sirva.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- PRATO 3 - Macarrão Alho e Óleo -->
+  <div class="dish-container">
+    <div class="dish-card">
+      <div class="card-front">
+        <!-- conteúdo da frente do card -->
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="Site/images/OP3.jpg" class="dish-image" alt="Macarrão Alho e Óleo">
+        <h3 class="dish-title">Macarrão Alho e Óleo</h3>
+        <span class="dish-description">Soltinho e muito fácil de fazer.</span>
+        <div class="dish-rate">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(402+)</span>
+          </div>
+          <button class="btn-default btn-ver-receita"><i class="fa-solid fa-book"></i></button>
+        </div>
+      </div>
+      
+      <div class="card-back">
+        <h3>Macarrão Alho e Óleo</h3>
+        <h4>Ingredientes:</h4>
+        <p><li>250g de macarrão</li>
+        <li>4 dentes de alho picados</li>
+        <li>3 colheres de sopa de azeite</li>
+        <li>Sal a gosto</li>
+        <li>Salsinha picada a gosto (opcional)</li></p>
+        <h4>Modo de Preparo:</h4>
+        <p>Cozinhe o macarrão em água com sal até ficar al dente. Enquanto isso, doure o alho no azeite em fogo baixo. Escorra o macarrão e misture ao alho e óleo ainda quente. Finalize com salsinha e sirva. Simples, rápido e delicioso.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- PRATO 4 - Caldo Verde -->
+  <div class="dish-container">
+    <div class="dish-card">
+      <div class="card-front">
+        <!-- conteúdo da frente do card -->
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="Site/images/OP4.jpg" class="dish-image" alt="Caldo Verde">
+        <h3 class="dish-title">Caldo Verde</h3>
+        <span class="dish-description">Sopa com couve, batata e chouriço.</span>
+        <div class="dish-rate">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(660+)</span>
+          </div>
+          <button class="btn-default btn-ver-receita"><i class="fa-solid fa-book"></i></button>
+        </div>
+      </div>
+      
+      <div class="card-back">
+        <h3>Caldo Verde</h3>
+        <h4>Ingredientes:</h4>
+        <p><li>5 batatas médias</li>
+          <li>1 linguiça calabresa em rodelas</li>
+          <li>1 couve fatiada fininha</li>
+          <li>1 dente de alho picado</li>
+          <li>1/2 cebola picada</li>
+          <li>1 colher de sopa de azeite</li>
+          <li>Sal a gosto</li>
+          <li>Água suficiente para o cozimento</li></p>
+        <h4>Modo de Preparo:</h4>
+        <p>Cozinhe as batatas com água e sal até ficarem macias, depois bata no liquidificador até virar um creme. Refogue a cebola, o alho e a linguiça no azeite, junte o creme de batata e deixe ferver. Adicione a couve no final e cozinhe por mais alguns minutos. Sirva bem quente.        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- PRATO 5 - Coxinha de Frango -->
+  <div class="dish-container">
+    <div class="dish-card">
+      <div class="card-front">
+        <!-- conteúdo da frente do card -->
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="Site/images/OP5.jpg" class="dish-image" alt="Coxinha de Frango">
+        <h3 class="dish-title">Coxinha de Frango</h3>
+        <span class="dish-description">Salgadinho crocante e saboroso.</span>
+        <div class="dish-rate">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>
+          <button class="btn-default btn-ver-receita"><i class="fa-solid fa-book"></i></button>
+        </div>
+      </div>
+      
+      <div class="card-back">
+        <h3>Coxinha de Frango</h3>
+        <h4>Ingredientes:</h4>
+        <p><li>2 xícaras de frango cozido e desfiado</li>
+        <li>1 colher de sopa de manteiga</li>
+        <li>1 dente de alho picado </li>
+        <li>3 xícaras de caldo do cozimento do frango</li>
+        <li>3 xícaras de farinha de trigo</li>
+        <li>Sal, pimenta e cheiro-verde a gosto</li>
+        <li>Farinha de rosca para empanar</li>
+        <li>2 ovos batidos</li>
+        <li>Óleo para fritar</li></p>
+        <h4>Modo de Preparo:</h4>
+        <p>Cozinhe e desfie o frango com temperos. Ferva o caldo com manteiga e adicione a farinha, mexendo até formar uma massa firme. Modele com o recheio de frango. Passe no ovo, empane e frite até dourar.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- PRATO 6 - Carne de Panela -->
+  <div class="dish-container">
+    <div class="dish-card">
+      <div class="card-front">
+        <!-- conteúdo da frente do card -->
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="Site/images/OP6.jpg" class="dish-image" alt="Carne de Panela com Batata">
+        <h3 class="dish-title">Carne de Panela com Batata</h3>
+        <span class="dish-description">Caseiro, saboroso e bem temperado.</span>
+        <div class="dish-rate">
+          <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(502+)</span>
+          </div>
+          <button class="btn-default btn-ver-receita"><i class="fa-solid fa-book"></i></button>
+        </div>
+      </div>
+      
+      <div class="card-back">
+        <h3>Carne de Panela com Batata</h3>
+        <h4>Ingredientes:</h4>
+        <p><li>500g de carne em cubos (acém ou músculo)</li>
+          <li>4 batatas médias cortadas</li>
+          <li>1 cebola picada</li>
+          <li>2 dentes de alho amassados</li>
+          <li>2 colheres de sopa de extrato de tomate</li>
+          <li>2 colheres de sopa de óleo</li>
+          <li>Sal e pimenta-do-reino a gosto</li>
+          <li>Cheiro-verde a gosto</li>
+          <li>Água quente</li></p>
+        <h4>Modo de Preparo:</h4>
+        <p>Doure a carne no óleo com alho e cebola, adicione o extrato de tomate, tempere e cubra com água quente. Cozinhe até a carne ficar macia, depois junte as batatas e cozinhe até amolecerem e o caldo engrossar levemente. Finalize com cheiro-verde.</p>
+      </div>
+      
+    </div>
+  </div>
+  
+      </section>
+      
+
+      <section id="AddReceitas">
+        <div class="add-receitas-wrapper">
+          <img src="Site/images/Chefe.png" alt="Chefe de Cozinha" id="Chefe-de-Cozinha" />
+      
+          <div id="AddReceitas_content">
+            <h2 class="section-title">
+              <br />Chef por um Dia? Mostre Seu Talento <i class="fa-solid fa-book-open"></i>
+            </h2>
+            <h3 class="section-subtitle">Compartilhe suas receitas favoritas conosco !!!</h3>
+      
+            <p class="description_1">
+              <br /> Mostre seu talento na cozinha! <br /><br />
+              Adicione suas receitas favoritas e ajude outras pessoas a criarem pratos incríveis e cheios de sabor no dia a dia.
+            </p>
+            <p class="description">
+              <br /><br />
+              Clique no botão abaixo para começar a adicionar suas receitas. <br><br>
+            </p>
+            <a href="cadastro.html" class="btn-default">Adicionar Receita</a>
+          </div>
+        </div>
+      </section>
+    <footer>
+      <div id="footer_items">
+        <span id="copyright">
+          &copy; 2025 Layse Sena & Arthur Galvão
+        </span>
+      </div>
+    </footer>
+  </main>
+<!-- SCRIPT FINAL UNIFICADO -->
+<!-- SCRIPT FINAL UNIFICADO -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Toggle do menu mobile
+    const toggleBtn = document.querySelector(".mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile_menu");
+    const overlay = document.getElementById("overlay");
+    const mainContent = document.querySelector("main");
+
+    toggleBtn.addEventListener("click", function () {
+      mobileMenu.classList.toggle("active");
+      overlay.classList.toggle("active");
+      const expanded = toggleBtn.getAttribute("aria-expanded") === "true";
+      toggleBtn.setAttribute("aria-expanded", !expanded);
+
+      if (mobileMenu.classList.contains("active")) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.body.classList.add("menu-open");
+        mainContent.style.display = "none";
+      } else {
+        document.body.classList.remove("menu-open");
+        mainContent.style.display = "block";
+      }
+    });
+
+    // Navegação por links
+    const links = document.querySelectorAll("#navbar a, #mobile_nav_list a");
+    links.forEach(link => {
+  link.addEventListener("click", function (event) {
+    const href = link.getAttribute("href");
+
+    // Só previne se for âncora (#Menu, por exemplo)
+    if (href.startsWith("#")) {
+      event.preventDefault();
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      // Fecha menu mobile se estiver aberto
+      mobileMenu.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      mainContent.style.display = "block";
+    }
+  });
+});
+
+
+    // Flip cards
+    const buttons = document.querySelectorAll('.btn-ver-receita');
+    const cards = document.querySelectorAll('.dish-card');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.stopPropagation(); // Evita que o clique vá até o card
+        const card = button.closest('.dish-card');
+        card.classList.toggle('flipped');
+      });
+    });
+
+    cards.forEach(card => {
+      card.addEventListener('click', function () {
+        if (card.classList.contains('flipped')) {
+          card.classList.remove('flipped');
+        }
+      });
+    });
+
+  });
+</script>
+
+
+  </body>
+  </html>
