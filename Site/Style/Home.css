@@ -1,0 +1,112 @@
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 91px); 
+    position: relative;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Texto */
+#cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Título */
+#cta .title {
+    font-size: 4.2rem;
+    color: rgb(78, 1, 1);
+    text-align: center;
+}
+
+#cta .title span {
+    color: rgb(105, 128, 3);
+}
+
+/* Descrição */
+#cta .description {
+    font-size: 1.5rem;
+    color: rgb(122, 65, 10);
+    text-align: center;
+}
+
+/* Botões */
+#cta_buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: rgb(51, 7, 7);
+}
+#banner { 
+    width: 40%; /* Largura do banner */
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    align-items: center; /* Alinha verticalmente a imagem no centro */
+    padding: 0; 
+    z-index: 1;
+}
+
+#banner img {
+    width: 100%;
+    max-width: 550px; 
+    max-height: 500px; 
+    border-radius: 0; /* Remove o arredondamento */
+    object-fit: cover; /* Faz com que a imagem se ajuste ao tamanho sem deformação */
+}
+
+
+/* Fundo decorativo */
+.shape {
+    background-color: rgba(196, 170, 84, 0.651);
+    width: 47%;
+    height: 90%;
+    position: absolute;
+    border-radius: 100% 50% 0 50%;
+    right: 0%;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 800px) {
+    #banner {
+      display: none !important;
+      box-shadow: none !important;
+      background: none !important;
+    }
+  
+    .shape {
+      display: none !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #Home {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #cta {
+      align-items: center;
+    }
+  
+    #cta_buttons {
+      justify-content: center;
+    }
+  }
+
+
+
+
+

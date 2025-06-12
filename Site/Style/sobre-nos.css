@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hwb(61 64% 7% / 0.904);
+  color: #40250b;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  background-color: transparent;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.7rem;
+  color: #1d9605;
+}
+
+header h1 span {
+  font-size: 2.5rem;
+  color: #e55c00;
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #d6b567;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(58, 1, 1, 0.1); /* Sombra para dar um destaque */
+
+}
+
+/* Título da seção */
+.sobre-nos h2 {
+  font-size:1.7rem;
+  color: #85390a;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
+
+}
+
+/* Parágrafos */
+.sobre-nos p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #6b3b0e;
+  text-align: justify;
+}
+
+/* Destaque em textos fortes */
+.sobre-nos strong {
+  color: #c45800;
+}
+
+/* Imagem */
+.sobre-nos img {
+  display: block;
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 500px; /* Limite máximo */
+  height: auto;
+}
+
+
+/* Botão "Voltar para o Menu" */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #e55c00;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #d45200;
+}
+
+footer p {
+  font-size: 0.3rem;
+  text-align: center;
+  padding: 10px 5px;      
+  margin-top: 15px;        /* Menos espaço externo */
+  color: #180b02;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}

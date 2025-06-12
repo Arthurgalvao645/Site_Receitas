@@ -1,0 +1,19 @@
+footer {
+    width: 100%;
+    padding: 20px ;
+    margin: 20;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+  }
+  
+  #copyright {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #2c1402;
+    font-weight: 500; 
+    font-size: 0.9rem;
+  }
+  
+ 

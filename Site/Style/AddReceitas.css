@@ -1,0 +1,261 @@
+/* ====== SEÇÃO MENU ====== */
+#Menu {
+  padding: 2rem 1rem 0; /* Tiramos o espaçamento inferior */
+  text-align: center;
+}
+
+/* ====== SEÇÃO CARDS ====== */
+#AddReceitas {
+  margin-top: 1rem; /* Espaçamento menor entre os cards e essa seção */
+}
+
+#dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Container com perspectiva para flip */
+.dish-container {
+  perspective: 1000px;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card que gira */
+.dish-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer; /* Adicionado para indicar que o card pode ser clicado */
+}
+
+/* Aplica rotação quando tiver classe "flipped" */
+.dish-card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Frente e Verso do Card */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Centraliza os conteúdos vertical e horizontalmente */
+  text-align: center;
+}
+
+/* Frente */
+.card-front {
+  z-index: 2;
+}
+
+/* Verso */
+.card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Imagem do prato */
+.dish-image {
+  width: 95%;
+  max-width: 260px; /* Limita o tamanho no desktop */
+  height: auto; /* Deixa a altura proporcional à largura */
+  aspect-ratio: 4 / 3; /* Mantém proporção de aspecto */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.9rem;
+}
+
+
+/* Coração */
+.dish-heart {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #bd0000;
+}
+
+/* Título e descrição */
+.dish-title {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.dish-description {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Estrelas + botão */
+.dish-rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* <-- centraliza horizontalmente */
+  gap: 0.4rem; /* espaço entre estrelas e botão */
+}
+
+
+.dish-rate i {
+  color: #ddbd65;
+  margin-right: 1.2px;
+}
+
+.dish-rate span {
+  font-size: 0.6rem;
+  color: #666;
+}
+
+/* Botão para virar */
+.btn-ver-receita {
+  background-color: #b84928;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.3rem; /* se quiser um espacinho extra */
+}
+
+.btn-ver-receita:hover {
+  background-color: #ff6435;
+}
+
+/* Verso - conteúdo */
+.card-back h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card-back h4 {
+  color: #ff7043;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.card-back p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+/* De 766px até 601px - 2 cards por linha */
+@media (max-width: 766px) and (min-width: 601px) {
+  .dish-container {
+    width: 45%;  /* Dois cards por linha com 45% da largura */
+    font-size: 0.75rem; /* Ajuste do tamanho da fonte */
+  }
+
+  #dishes {
+    flex-direction: row;  /* Manter a disposição em linha */
+    justify-content: space-between;  /* Garantir que os cards fiquem bem distribuídos */
+  }
+
+  /* Ajuste no tamanho da fonte de ingredientes e modo de preparo */
+  .card-front p, /* Para os ingredientes */
+  .card-back p,  /* Para o modo de preparo */
+  .card-back h4 { /* Título da seção no verso */
+    font-size: 0.75rem;
+  }
+
+  .card-back h3 {
+    font-size: 1rem; /* Ajustar o título no verso */
+  }
+}
+
+/* Para telas menores que 500px - 1 card por linha */
+@media (max-width: 500px) {
+  .dish-container {
+    width: 80%; /* Ajuste para um card por linha */
+  }
+
+  #dishes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Diminuir o tamanho da fonte de Ingredientes e Modo de Preparo */
+  .card-front p, /* Para os ingredientes */
+  .card-back p,  /* Para o modo de preparo */
+  .card-back h4 { /* Título da seção no verso */
+    font-size: 0.75rem;
+  }
+
+  .card-back h3 {
+    font-size: 1rem; /* Ajustar o título no verso */
+  }
+}
+
+
+/* Evitar barras de rolagem horizontais */
+html, body {
+  overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+/* ====== SEÇÃO ADICIONAR RECEITAS ====== */
+.add-receitas-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  padding: 2rem 1rem;
+  text-align: left;
+  width: 100%; /* Garante que a largura da seção não ultrapasse a tela */
+font-size: 1.5rem;
+}
+
+/* Imagem do chefe */
+#Chefe-de-Cozinha {
+  max-width: 400px;
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Conteúdo ao lado da imagem */
+#AddReceitas_content {
+  flex: 1;
+  min-width: 500px;
+  max-width: 50%;
+  font-size: 0.99rem;
+  color: #440404;
+}
+
+/* Ajuste de layout para telas menores */
+@media (max-width: 750px) {
+  .add-receitas-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; /* Permite quebrar quando necessário */
+  }
+
+  /* Esconder imagem do chefe */
+  #Chefe-de-Cozinha {
+    display: none;
+  }
+
+  /* Ajustar o conteúdo ao lado da imagem */
+  #AddReceitas_content {
+    min-width: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+}
